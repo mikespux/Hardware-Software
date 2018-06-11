@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ParentLayoutFarmers">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/toolbar" />
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutVR"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="visible"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtKGS" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scale Not Connected"
+            android:id="@+id/txtScaleConn"
+            android:textColor="@color/colorPinkDark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  -->    "
+            android:id="@+id/textView2"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Printer Connected"
+            android:id="@+id/txtPrinterConn"
+            android:textColor="@color/colorPinkDark"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnReconnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reconnect Printer"
+            android:textColor="@drawable/button_text_color"
+            android:background="@drawable/bg_buttons"
+            android:visibility="gone"
+            android:padding="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ListView
+        android:id="@+id/lvUsers"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="#ff8db3e1"
+        android:dividerHeight="4.0dip"
+        android:choiceMode="singleChoice"
+        android:layout_weight="2.4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+            tools:ignore="ObsoleteLayoutParam" />
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="wrap_content"
+            android:elevation="50dp"
+            android:background="#ffffff"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:backgroundTintMode="src_over"
+            android:queryBackground="@color/colorWhite"
+            android:focusable="true"
+            android:iconifiedByDefault="false"
+            android:inputType="phone"
+            tools:ignore="UnusedAttribute">
+        </SearchView>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ParentLayout">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/toolbar" />
+    </android.support.design.widget.AppBarLayout>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="20dp">
+
+
+    <Button android:id="@+id/btn_cardsearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/read_card_search"
+        android:background="@drawable/bg_buttons"
+        android:layout_marginBottom="15dp" />
+
+    <Button
+        android:id="@+id/btn_manualsearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/manual_farmer_search"
+        android:background="@drawable/bg_buttons"
+        android:layout_marginBottom="15dp" />
+
+    <Button
+        android:id="@+id/btn_fingerprintsearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_buttons"
+        android:text="@string/fingerprint_search"
+        android:visibility="gone" />
+
+</LinearLayout>
+</LinearLayout>

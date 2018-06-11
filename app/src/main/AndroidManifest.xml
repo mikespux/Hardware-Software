@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.easyweigh" >
+
+    <uses-permission android:name="android.permission.NFC"/>
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true"/>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="false" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activities.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- This is where we register our receiver -->
+        <receiver
+            android:name=".activities.DeviceAdmin"
+            android:permission="android.permission.BIND_DEVICE_ADMIN" >
+            <intent-filter>
+
+                <!-- This action is required -->
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+
+            <!-- This is required this receiver to become device admin component. -->
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin_sample" />
+        </receiver>
+
+        <!--  MainActivity -->
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <!--  Splash -->
+        <activity
+            android:name=".activities.SplashActivity"
+            android:screenOrientation="portrait"/>
+        <!--  SettingsActivity -->
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:label="@string/title_settings"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <!--  PreferenceGeneralActivity -->
+        <activity
+            android:name="com.easyweigh.preferences.PreferenceGeneralActivity"
+            android:label="@string/title_settings">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.SettingsActivity" />
+        </activity>
+        <!--  PreferenceOverallActivity -->
+        <activity
+            android:name=".preferences.PreferenceOverallActivity"
+            android:label="@string/title_settings">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.SettingsActivity"
+               />
+        </activity>
+        <activity android:name="com.fgtit.fpreader.FingerPrintReader"
+            android:screenOrientation="portrait"/>
+        <!--  FarmerDetailsActivity -->
+        <activity
+            android:name=".activities.FarmerDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <!--  FarmerDetailsReceiptActivity -->
+        <activity
+            android:name=".activities.FarmerDetailedRecieptsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.FarmerSMSRecieptsActivity"
+            android:screenOrientation="portrait"/>
+        <!--  Farmer WeighActivity -->
+        <activity
+            android:name=".activities.FarmerManualWeighActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.FarmerScaleWeighActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.FarmerScaleWeighCardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <!--  FarmerRecieptsActivity -->
+        <activity
+            android:name=".activities.FarmerRecieptsActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activities.FarmerReceiptInternalPrinter"
+            android:screenOrientation="portrait"/>
+        <!--  AgentRecieptsActivity -->
+        <activity
+            android:name=".activities.AgentRecieptsActivity"
+            android:screenOrientation="portrait"/>
+        <!--  BatchRecieptsActivity -->
+        <activity
+            android:name=".activities.BatchRecieptsActivity"
+            android:screenOrientation="portrait"/>
+        <!--  AgentBatchRecieptsActivity -->
+        <activity
+            android:name=".activities.AgentBatchRecieptsActivity"
+            android:screenOrientation="portrait"/>
+        <!--  ZReportActivity -->
+        <activity
+            android:name=".activities.ZReportActivity"
+            android:screenOrientation="portrait"/>
+        <!--  ZAgtReportActivity -->
+        <activity
+            android:name=".activities.ZAgtReportActivity"
+            android:screenOrientation="portrait"/>
+        <!--  UploadActivity -->
+        <activity android:name=".activities.UploadActivity"
+            android:screenOrientation="portrait"/>
+        <!--  UploadAllActivity -->
+        <activity android:name=".activities.UploadAllActivity"
+            android:screenOrientation="portrait"/>
+        <!--  UploadDeliveryActivity -->
+        <activity
+            android:name=".activities.UploadDeliveryActivity"
+            android:screenOrientation="portrait"/>
+        <!--  UploadAgentActivity -->
+        <activity android:name=".activities.UploadAgentActivity"
+            android:screenOrientation="portrait"/>
+        <!--  UploadAgentDeliveryActivity -->
+        <activity
+            android:name=".activities.UploadAgentDeliveryActivity"
+            android:screenOrientation="portrait"/>
+        <!--  DeliveryReportActivity -->
+        <activity
+            android:name=".activities.DeliveryReportActivity"
+            android:screenOrientation="portrait"/>
+        <!--  AgentDeliveryReportActivity -->
+        <activity
+            android:name=".activities.AgentDeliveryReportActivity"
+            android:screenOrientation="portrait"/>
+        <!--  AgentDeliveryEditActivity -->
+        <activity
+            android:name=".activities.AgentDeliveryEditActivity"
+            android:screenOrientation="portrait"/>
+        <!--  ExportActivity -->
+        <activity
+            android:name=".activities.ExportActivity"
+            android:screenOrientation="portrait"/>
+        <!--  ExportAllActivity -->
+        <activity
+            android:name=".activities.ExportAllActivity"
+            android:screenOrientation="portrait"/>
+        <!--  ExportAllAgentActivity -->
+        <activity
+            android:name=".activities.ExportAllAgentActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activities.DeliveryEditActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:label="Choose Device"
+            android:name=".activities.DeviceListActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:label="Choose Device"
+            android:name="com.fgtit.fpreader.FDeviceListActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:label="Choose Device"
+            android:name=".activities.PairedDeviceListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog"
+            android:configChanges="keyboardHidden|orientation" />
+        <service
+            android:name=".services.CardWeighingService"
+            android:screenOrientation="portrait"/>
+        <service
+            android:name=".services.WeighingService"
+            android:screenOrientation="portrait"/>
+        <service
+            android:name=".services.AgentWeighingService"
+            android:screenOrientation="portrait"/>
+        <!--  ImportMainMasterActivity -->
+        <activity
+            android:name=".activities.ImportMainMasterActivity"
+            android:screenOrientation="portrait"/>
+        <!--  ImportMasterActivity -->
+        <activity
+            android:name=".activities.ImportMasterActivity"
+            android:screenOrientation="portrait"/>
+        <!--  ImportUsersActivity -->
+        <activity
+            android:name=".activities.ImportUsersActivity"
+            android:screenOrientation="portrait"/>
+        <!--  UserDetailsActivity -->
+        <activity
+            android:name=".activities.UserDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <!--  AgentDetailsActivity -->
+        <activity
+            android:name=".activities.AgentDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <!--  WareHouseDetailsActivity -->
+        <activity
+            android:name=".activities.WareHouseDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <!--  TransporterDetailsActivity -->
+        <activity
+            android:name=".activities.TransporterDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <!--  ProduceDetailsActivity -->
+        <activity
+            android:name=".activities.ProduceDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <!--  RouteShedActivity -->
+        <activity
+            android:name=".activities.RouteShedActivity"
+            android:screenOrientation="portrait"/>
+        <!--  VerificationModeActivity -->
+        <activity
+            android:name=".activities.VerificationModeActivity"
+            android:screenOrientation="portrait"/>
+        <!--  VarietyDetailsActivity -->
+        <activity
+            android:name=".activities.VarietyDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <!--  GradeDetailsActivity -->
+        <activity
+            android:name=".activities.GradeDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <!--  CompanyDetailsActivity -->
+        <activity
+            android:name=".activities.CompanyDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <!--  FactoryDetailsActivity -->
+        <activity
+            android:name=".activities.FactoryDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <!--  ZonesDetailsActivity -->
+        <activity
+            android:name=".activities.ZoneDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <!--  RouteDetailsActivity -->
+        <activity
+            android:name=".activities.RouteDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <!--  ShedDetailsActivity -->
+        <activity
+            android:name=".activities.ShedDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <!--  PrintTestActivity -->
+        <activity
+            android:name=".aidlprinter.service.utils.PrinterTestDemoAct"
+            android:screenOrientation="portrait"/>
+
+        <!--  PrintTestActivity -->
+        <activity android:name=".activities.PrintTestActivity"
+            android:theme="@android:style/Theme.Dialog"
+            android:label="Print Test"/>
+
+        <!--  PrintReceiptActivity -->
+        <activity android:name=".activities.PrintRecieptActivity"
+            android:theme="@android:style/Theme.Dialog"
+            android:label="Print Or Send SMS"/>
+
+        <activity android:name=".activities.PrintSingleRecieptActivity"
+            android:theme="@android:style/Theme.Dialog"
+            android:label="Print"/>
+        <activity
+            android:name=".vsp.serialdevice.SerialActivity"
+            android:label="@string/title_activity_serial"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.FarmerScaleSerialWeighActivity"
+            android:label="@string/title_activity_serial"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.AgentScaleSerialWeighActivity"
+            android:label="@string/title_activity_serial"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+
+        <activity
+            android:name=".activities.AgentScaleEW15WeighActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+    </application>
+
+</manifest>

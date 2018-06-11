@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="E:\Easyweigh\Easyweigh\app\src\main\libs\joda-time-2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="752c0fe8a5b2d6704c9d9d6f06d9abdcacf4045d">
+        <dex dex="E:\Easyweigh\Easyweigh\app\build\intermediates\pre-dexed\debug\joda-time-2.0_38a4783c5e44e5b85688d1be539fd529871e511d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Easyweigh\Easyweigh\sample\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="E:\Easyweigh\Easyweigh\sample\build\intermediates\pre-dexed\release\internal_impl-23.1.1_7c99999c0cd821b180ed7b19b356a91c9721025c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Easyweigh\Easyweigh\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="E:\Easyweigh\Easyweigh\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.3.1_5f0b7fd69db96153cfceae2f4e2e0b6630c8e4bf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Easyweigh\Easyweigh\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="E:\Easyweigh\Easyweigh\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.3.1_461bb430378d9f06c370fe441991b83b59bf8fbd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Easyweigh\Easyweigh\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="E:\Easyweigh\Easyweigh\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.3.1_a3e68acc2a1fddfd25b8ad46d237c9ccfea2ac7d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Easyweigh\Easyweigh\app\src\main\libs\commons-lang3-3.3.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="659861b4acde07a0527211e40d256119face1d15">
+        <dex dex="E:\Easyweigh\Easyweigh\app\build\intermediates\pre-dexed\debug\commons-lang3-3.3.2_03b51e5764ba8dc53d670491fb5d3f7f179d4815.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\MICHAEL\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="E:\Easyweigh\Easyweigh\app\build\intermediates\pre-dexed\debug\support-annotations-25.3.1_4dd0740f72ea34517c9df648caf6b5d054db7718.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Easyweigh\Easyweigh\app\build\intermediates\exploded-aar\com.github.ybq\Android-SpinKit\1.0.5\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="917457e2cf1d47a3923a262372055a10e59c14ca">
+        <dex dex="E:\Easyweigh\Easyweigh\app\build\intermediates\pre-dexed\debug\com.github.ybq-Android-SpinKit-1.0.5_6a392878c7f9bba46b43c2a1e607f4216ac4ec89.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Easyweigh\Easyweigh\app\src\main\libs\opencsv-2.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c0ffd01065bc3fe571e1a4eb7014a03333f0663d">
+        <dex dex="E:\Easyweigh\Easyweigh\app\build\intermediates\pre-dexed\debug\opencsv-2.3_29091267fe5500d58768bb2bcee9ea1546ba74b4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Easyweigh\Easyweigh\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="E:\Easyweigh\Easyweigh\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.3.1_4f887eb7d55f3ee80c87bc075139d3bd89183dcd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Easyweigh\Easyweigh\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="E:\Easyweigh\Easyweigh\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.3.1_81eacb3170420c4b8b592966d1e22f0d3a6e4884.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Easyweigh\Easyweigh\app\build\intermediates\exploded-aar\com.toptoche.searchablespinner\searchablespinnerlibrary\1.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="21407504337ca39a0815618ef916f13e447ff697">
+        <dex dex="E:\Easyweigh\Easyweigh\app\build\intermediates\pre-dexed\debug\com.toptoche.searchablespinner-searchablespinnerlibrary-1.3.1_096385f4274fe3015541ca8b5e5ab2237426936c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Easyweigh\Easyweigh\app\build\intermediates\exploded-aar\Easyweigh\library-circle-arc-progress\1.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="5704c8c8a98ad75ac192312a46a72e4b55c6b5fa">
+        <dex dex="E:\Easyweigh\Easyweigh\app\build\intermediates\pre-dexed\debug\Easyweigh-library-circle-arc-progress-1.2.0_f9ef33f052727ae1421c7ec22c16b16d775d949d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Easyweigh\Easyweigh\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="E:\Easyweigh\Easyweigh\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-25.3.1_a7a78196871a8d5cf6c12e90d0048c8113c6fbf2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Easyweigh\Easyweigh\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b5e7892fb0708e792e0e933c4c0a0ca0ac7831fb">
+        <dex dex="E:\Easyweigh\Easyweigh\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-ads-8.4.0_52803ec6d921b916d29a31642930097726c89224.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Easyweigh\Easyweigh\app\src\main\libs\zxing.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e88c14e6e7daa0fa65172a62b54ee6a16ff4162d">
+        <dex dex="E:\Easyweigh\Easyweigh\app\build\intermediates\pre-dexed\debug\zxing_b713f5b4bee222f91cdec3d14cef4464f4a6cfbe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Easyweigh\Easyweigh\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="E:\Easyweigh\Easyweigh\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.3.1_277d3dc14d56b3b7f1c84e2f1cb8f73afa501616.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Easyweigh\Easyweigh\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="E:\Easyweigh\Easyweigh\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-8.4.0_8808ea6a35533ee7f28341b15721db9db7fda03c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Easyweigh\Easyweigh\sample\build\intermediates\exploded-aar\com.android.support\design\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="E:\Easyweigh\Easyweigh\sample\build\intermediates\pre-dexed\release\com.android.support-design-23.1.1_cdcd3f8ad116fe7f5ff8c0312aa60efd249c4f49.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Easyweigh\Easyweigh\app\build\intermediates\exploded-aar\com.android.support\design\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="E:\Easyweigh\Easyweigh\app\build\intermediates\pre-dexed\debug\com.android.support-design-25.3.1_f19b07a98596f088f2596fe15eb2d5f469134ebf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Easyweigh\Easyweigh\sample\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="E:\Easyweigh\Easyweigh\sample\build\intermediates\pre-dexed\release\com.android.support-recyclerview-v7-23.1.1_66e883811dbe89f1185ff315f373f48d1bbcc0e8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Easyweigh\Easyweigh\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="E:\Easyweigh\Easyweigh\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.3.1_5f6f91d9d53a93f141ed1960822e0438de48d61b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\MICHAEL\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="E:\Easyweigh\Easyweigh\sample\build\intermediates\pre-dexed\release\support-annotations-23.1.1_39e800139d6501560dbe90fda8fe6e32a84f3aa0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Easyweigh\Easyweigh\app\src\main\libs\ksoap2-android-assembly-2.4-jar-with-dependencies .jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e8796346a9191a019e936210a2dc50662c57594b">
+        <dex dex="E:\Easyweigh\Easyweigh\app\build\intermediates\pre-dexed\debug\ksoap2-android-assembly-2.4-jar-with-dependencies _6c0c2a05ce93d3c7cb744d51a4d4e561f8468475.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Easyweigh\Easyweigh\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="E:\Easyweigh\Easyweigh\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.3.1_e5e8bb2d32a5f3db3a28f5df0e6c60ebe5e08f79.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Easyweigh\Easyweigh\app\src\main\libs\java-json.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="edad9c5de6fb8df07c535a47045956026011ffa3">
+        <dex dex="E:\Easyweigh\Easyweigh\app\build\intermediates\pre-dexed\debug\java-json_4e4e2b32a034577505817f7467c899e2a1c2642d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Easyweigh\Easyweigh\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="E:\Easyweigh\Easyweigh\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.3.1_6c13e8ddbc273f05769672cadcce938eee1c8dd8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Easyweigh\Easyweigh\app\build\intermediates\exploded-aar\Easyweigh\waterWaveProgress\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e9473f72908b7e1b43c37ca247a7f137159b2205">
+        <dex dex="E:\Easyweigh\Easyweigh\app\build\intermediates\pre-dexed\debug\Easyweigh-waterWaveProgress-unspecified_58d206d28fe905684f0c697050442efe9234c8cb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Easyweigh\Easyweigh\app\build\intermediates\exploded-aar\com.android.support\transition\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="E:\Easyweigh\Easyweigh\app\build\intermediates\pre-dexed\debug\com.android.support-transition-25.3.1_81800dd6f87540f7d470922b565940221459a4cf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Easyweigh\Easyweigh\sample\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="E:\Easyweigh\Easyweigh\sample\build\intermediates\pre-dexed\release\com.android.support-appcompat-v7-23.1.1_b0e7660f889f2c1cf5a6da11195261c96524afba.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Easyweigh\Easyweigh\sample\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="E:\Easyweigh\Easyweigh\sample\build\intermediates\pre-dexed\release\com.android.support-support-v4-23.1.1_3a21869581f841789dcec11cb1109682350dc7c3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Easyweigh\Easyweigh\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="914f5d3e3ace66080e59613708f06d129a222e25">
+        <dex dex="E:\Easyweigh\Easyweigh\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-25.3.1_dfede89ab8e8e1fbdbf736db1e0893dbfd84562c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Easyweigh\Easyweigh\sample\build\intermediates\exploded-aar\com.github.ybq\library-splash\1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="2e9741939dbd0da4c609168bbe83d9e9f3a3bc73">
+        <dex dex="E:\Easyweigh\Easyweigh\sample\build\intermediates\pre-dexed\release\com.github.ybq-library-splash-1.0_1e676db39eddd4749cc7ca3386a5859c4e5fa634.jar" />
+    </item>
+
+</items>

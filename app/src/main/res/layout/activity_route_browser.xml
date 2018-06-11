@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ParentLayout">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/toolbar" />
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView3" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@drawable/whitestom_toast"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Route"
+            android:id="@+id/textView9"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorBlack" />
+<!--
+<com.toptoche.searchablespinnerlibrary.SearchableSpinner
+-->
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mc_cRoute"
+            android:popupBackground="@color/colorWhite"
+            android:spinnerMode="dialog"
+            android:prompt="@string/spinner_prompt_route"/>
+      </LinearLayout>
+
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal" >
+
+        <TextView
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:text="Shed"
+            android:textColor="@color/colorBlack" />
+
+        <Spinner
+            android:id="@+id/sp_shed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:popupBackground="@color/colorWhite"
+            android:spinnerMode="dialog"
+            android:prompt="@string/spinner_prompt_shed"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textAppearance="?android:attr/textAppearanceMedium"
+              android:text="Produce Container"
+              android:id="@+id/textView12"
+              android:layout_marginTop="5dp"
+              android:textColor="@color/colorBlack" />
+
+          <EditText
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/edtCan"
+              android:inputType="numberDecimal" />
+      </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:paddingTop="10dp"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_buttons"
+                android:text="@string/back"
+                android:textColor="@drawable/button_text_color"
+                android:textSize="15sp"
+                android:visibility="visible" />
+
+            <Button
+              android:id="@+id/btn_next"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              android:background="@drawable/bg_buttons"
+              android:text="@string/next"
+              android:textColor="@drawable/button_text_color"
+              android:textSize="15sp"
+              android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

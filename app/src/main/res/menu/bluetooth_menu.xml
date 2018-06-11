@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+
+    <item android:id="@+id/scan"
+        android:title="@string/connect"
+        android:orderInCategory="80"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/discoverable"
+        android:title="@string/discoverable"
+        android:orderInCategory="90"
+        android:visible="false"
+        app:showAsAction="never" />
+</menu>

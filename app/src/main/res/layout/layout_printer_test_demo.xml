@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/content_view"
+    tools:context="com.test.printertestdemo.PrinterTestDemoAct" >
+
+<ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    
+  <Button
+        android:id="@+id/b_self"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Printer self-inspection" />
+
+  <Button
+        android:id="@+id/b_init"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Print the initialization" />
+ 
+  <Button
+        android:id="@+id/b_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Print text" />
+  
+  <Button
+        android:id="@+id/b_baidu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Print Baidu take away bill"
+      android:visibility="gone" />
+  
+ <!--  <Button
+        android:id="@+id/b_meituan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Print Meituan take away bill" /> 
+
+  <Button
+        android:id="@+id/b_erlmo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Print ele.me take away bill" />   
+  <Button
+        android:id="@+id/b_koubei"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Print Koubei take away bill" />    -->
+  <Button
+        android:id="@+id/b_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Print table" />  
+        
+  <Button
+        android:id="@+id/b_barcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Print bar code" /> 
+         
+  <Button
+        android:id="@+id/b_qcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Print qr-code" />
+  
+  <Button
+        android:id="@+id/b_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Print image"
+      android:visibility="gone" />
+        
+  <Button
+        android:id="@+id/b_lines"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Skip for 3 lines"
+      android:visibility="gone" />
+
+  <Button
+        android:id="@+id/b_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Comprehensive Test"
+      android:visibility="gone" />
+
+  <Button
+        android:id="@+id/b_testall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Multithreading print test"
+      android:visibility="gone" />
+  
+  <Button
+        android:id="@+id/b_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="check the length"
+      android:visibility="gone" />
+  
+  <Button
+        android:id="@+id/b_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="exit" /> 
+        
+  <Button
+        android:id="@+id/b_bytes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="hex special command"
+      android:visibility="gone" />
+        
+  <Button
+        android:id="@+id/b_block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Print black block"
+      android:visibility="gone" />
+        
+  <Button
+        android:id="@+id/b_length"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Random print black spots"
+      android:visibility="gone" />
+        
+  <TextView 
+      	android:id="@+id/info"
+      	android:layout_width="match_parent"
+      	android:layout_height="wrap_content"
+      />
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

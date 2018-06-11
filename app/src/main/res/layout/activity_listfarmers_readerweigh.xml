@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ParentLayoutFarmers"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/toolbar" />
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutVR"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="visible"
+        tools:ignore="RtlHardcoded">
+
+        <TextView
+            android:id="@+id/txtKGS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtScaleConn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scale_not_connected"
+            android:textColor="@color/colorPinkDark" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  -->    "
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/txtPrinterConn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/printer_connected"
+            android:textColor="@color/colorPinkDark"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnReconnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_buttons"
+            android:padding="5dp"
+            android:text="@string/reconnect_printer"
+            android:textColor="@drawable/button_text_color"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/whitestom_toast">
+
+            <ImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true"
+                android:layout_margin="10dp"
+                android:contentDescription=""
+                android:scaleType="fitCenter"
+                android:src="@drawable/card_reader"
+                tools:ignore="ContentDescription" />
+
+            <Button
+                android:id="@+id/btnConnectReader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/bg_buttons"
+                android:padding="5dp"
+                android:text="@string/connect"
+                android:textColor="@drawable/button_text_color"
+                android:layout_below="@+id/thumbnail"
+                android:layout_alignLeft="@+id/thumbnail"
+                android:layout_alignStart="@+id/thumbnail"
+                android:layout_marginLeft="61dp"
+                android:layout_marginStart="61dp" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnConnectReader"
+                android:maxLines="3"
+                android:padding="8dp"
+                android:text="@string/cf_reader"
+                android:textColor="#222"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                tools:ignore="SpUsage" />
+
+            <TextView
+                android:id="@+id/txtdesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:maxLines="3"
+                android:padding="8dp"
+                android:text="@string/cf_reader_desc"
+                android:textColor="@color/colorPinkDark"
+                android:textSize="14dp"
+                tools:ignore="SpUsage" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ListView
+            android:id="@+id/lvUsers"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_weight="2.4"
+            android:choiceMode="singleChoice"
+            android:divider="#ff8db3e1"
+            android:dividerHeight="4.0dip"
+            android:visibility="gone"
+            tools:ignore="InefficientWeight,ObsoleteLayoutParam,RtlHardcoded" />
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="#ffffff"
+            android:backgroundTint="@color/colorPrimary"
+            android:backgroundTintMode="src_over"
+            android:elevation="50dp"
+            android:focusable="true"
+            android:iconifiedByDefault="false"
+            android:inputType="phone"
+            android:queryBackground="@color/colorWhite"
+            android:visibility="gone"
+            tools:ignore="RtlHardcoded,UnusedAttribute"></SearchView>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/prefCategory">
+
+        <EditTextPreference
+            android:maxLength="4"
+            android:title="@string/terminalID"
+            android:key="terminalID"
+            android:summary="@string/prefTerminalSummary"
+            android:defaultValue="@string/defaultValue" />
+        <CheckBoxPreference
+            android:title="@string/enablePrinting"
+            android:key="enablePrinting"
+            android:summary="@string/prefPrintingSummary"
+            android:defaultValue="false" />
+        <EditTextPreference
+            android:title="@string/ebuyingPrice"
+            android:key="buyingPrice"
+            android:summary="@string/ebuyingPriceSummary"
+            android:defaultValue="@string/defaultValue" />
+        <CheckBoxPreference
+            android:title="@string/buyingPrice"
+            android:key="enableBuyingPrice"
+            android:summary="@string/buyingPriceSummary"
+            android:defaultValue="false" />
+        <CheckBoxPreference
+            android:title="@string/enableQuality"
+            android:key="enableQuality"
+            android:summary="@string/prefQualitySummary"
+            android:defaultValue="false" />
+        <CheckBoxPreference
+            android:title="@string/enableAlphaNumeric"
+            android:key="enableAlphaNumeric"
+            android:summary="@string/prefAlphaNumericSummary"
+            android:defaultValue="false" />
+        <CheckBoxPreference
+            android:title="@string/enableShifts"
+            android:key="enableShifts"
+            android:summary="@string/prefShiftsSummary"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="SMS Settings">
+        <PreferenceScreen
+            android:key="detail"
+            android:title="SMS Details Screen"
+            android:summary="Additional sms preferences held in another page">
+            <CheckBoxPreference
+                android:title="@string/enableSMS"
+                android:key="enableSMS"
+                android:summary="@string/enableSMSSummary"
+                android:defaultValue="false" />
+            <ListPreference
+                android:title="Mode of SMS"
+                android:key="SMSModes"
+                android:summary="Choose the Mode of Sending SMS"
+                android:entryValues="@array/SMSModes"
+                android:entries="@array/SMSModeNames"/>
+            <EditTextPreference
+                android:title="@string/Username"
+                android:key="prefUser"
+                android:summary="Enter username of service provider"/>
+            <EditTextPreference
+                android:title="@string/Password"
+                android:key="prefPass"
+                android:inputType="textPassword"
+                android:summary="Enter password of service provider"/>
+            <EditTextPreference
+                android:title="Sender ID"
+                android:key="SenderID"
+                android:summary="Enter Sender ID of service provider"
+                android:inputType="textCapCharacters"/>
+
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/prefCategoryWeighing">
+        <EditTextPreference
+            android:maxLength="2"
+            android:title="@string/stabilityReading"
+            android:key="stabilityReadingCounter"
+            android:summary="@string/stabilitySummary"
+            android:defaultValue="@string/stabilityDefaultValue" android:inputType="number" />
+        <EditTextPreference
+            android:maxLength="3"
+            android:title="@string/stabilityTime"
+            android:key="milliSeconds"
+            android:summary="@string/stabilitySummaryT"
+            android:defaultValue="@string/stabilityDefaultValueT" android:inputType="number" />
+
+        <EditTextPreference
+            android:maxLength="3"
+            android:title="@string/tareWeight"
+            android:key="tareWeight"
+            android:summary="@string/prefTareSummary"
+            android:defaultValue="@string/defaultValue"
+            android:inputType="numberDecimal" />
+
+        <CheckBoxPreference
+            android:title="@string/enableCanSerial"
+            android:key="enableCanSerial"
+            android:summary="@string/prefCanSerialSummary"
+            android:defaultValue="false" />
+
+        <CheckBoxPreference
+            android:title="@string/enableNFC"
+            android:key="enableNFC"
+            android:summary="@string/prefNFC"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/receiptSettings">
+        <CheckBoxPreference
+            android:title="@string/enableAutomaticDel"
+            android:key="enableAutomaticDel"
+            android:summary="@string/prefAutomaticDel"
+            android:defaultValue="false" />
+        <CheckBoxPreference
+            android:title="@string/enableAutomaticTicket"
+            android:key="enableAutomaticTicket"
+            android:summary="@string/prefAutomaticTicket"
+            android:defaultValue="false" />
+        <ListPreference
+            android:entries="@array/LanguageNames"
+            android:title="@string/Language"
+            android:key="Language"
+            android:summary="@string/LanguageSummary"
+            android:entryValues="@array/Language" />
+        <ListPreference
+            android:entries="@array/TemplateNames"
+            android:title="@string/Template"
+            android:key="receiptTemplates"
+            android:summary="@string/TemplateSummary"
+            android:entryValues="@array/Template" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/cloudSettings">
+        <CheckBoxPreference
+            android:title="@string/cloudServices"
+            android:key="cloudServices"
+            android:summary="@string/cloudServicesSummary"
+            android:defaultValue="false" />
+        <EditTextPreference
+            android:title="@string/licenseKey"
+            android:key="licenseKey"
+            android:summary="@string/licenseKeySummary"
+            android:defaultValue="@string/defaultKey" />
+        <EditTextPreference
+            android:title="@string/portalURL"
+            android:key="portalURL"
+            android:summary="@string/portalURLSummary"
+            android:defaultValue="@string/defaultURL" />
+        <ListPreference
+            android:entries="@array/internetAccessModeNames"
+            android:title="@string/internetAccessMode"
+            android:key="internetAccessModes"
+            android:summary="@string/internetAccessModeSummary"
+            android:entryValues="@array/internetAccessModes" />
+    </PreferenceCategory>
+</PreferenceScreen>

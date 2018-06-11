@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="statusbar_size">24dp</dimen>
+    <dimen name="TitleMarginBottom">24dp</dimen>
+    <dimen name="TitleMarginEnd">64dp</dimen>
+    <dimen name="TitleMarginStar">36dp</dimen>
+    <dimen name="texture_view_width">320dp</dimen>
+    <dimen name="texture_view_height">176dp</dimen>
+</resources>

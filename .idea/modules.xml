@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Easyway.iml" filepath="$PROJECT_DIR$/Easyway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library-circle-arc-progress/library-circle-arc-progress.iml" filepath="$PROJECT_DIR$/library-circle-arc-progress/library-circle-arc-progress.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library-splash/library-splash.iml" filepath="$PROJECT_DIR$/library-splash/library-splash.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample/sample.iml" filepath="$PROJECT_DIR$/sample/sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/searchablespinnerlibrary/searchablespinnerlibrary.iml" filepath="$PROJECT_DIR$/searchablespinnerlibrary/searchablespinnerlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/waterWaveProgress/waterWaveProgress.iml" filepath="$PROJECT_DIR$/waterWaveProgress/waterWaveProgress.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/easyweighVersionSettings"
+        >
+        <ListPreference
+            android:entries="@array/VerificationModes"
+            android:title="@string/vModes"
+            android:key="vModes"
+            android:summary="@string/verificationModesSummary"
+            android:entryValues="@array/vModes"
+            />
+        <ListPreference
+            android:entries="@array/scaleVersionNames"
+            android:title="@string/scaleModel"
+            android:key="scaleVersion"
+            android:summary="@string/scaleVersionSummary"
+            android:entryValues="@array/scaleVersions"
+            />
+        <ListPreference
+            android:entries="@array/weighingAlgorithms"
+            android:title="@string/weighingAlgorithm"
+            android:key="weighingAlgorithm"
+            android:summary="@string/weighingAlgorithmSummary"
+            android:entryValues="@array/weighingAlgorithmsNames" />
+    </PreferenceCategory>
+
+        <PreferenceCategory
+            android:title="@string/company_details"
+            >
+            <EditTextPreference
+                android:key="company_prefix"
+                android:title="@string/company_prefix"
+                />
+            <EditTextPreference
+                android:key="company_name"
+                android:title="@string/company_name"
+                />
+            <EditTextPreference
+                android:key="company_letterbox"
+                android:title="@string/company_letterbox"
+                />
+            <EditTextPreference
+                android:key="company_postalcode"
+                android:title="@string/company_postalcode"
+                />
+            <EditTextPreference
+                android:key="company_postalname"
+                android:title="@string/company_postalname"
+                />
+            <EditTextPreference
+                android:key="company_postregion"
+                android:title="@string/company_postregion"
+                />
+            <EditTextPreference
+                android:inputType="phone"
+                android:key="company_posttel"
+                android:title="@string/company_posttel" />
+        </PreferenceCategory>
+
+
+
+</PreferenceScreen>

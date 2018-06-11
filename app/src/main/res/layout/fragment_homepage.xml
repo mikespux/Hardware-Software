@@ -1,0 +1,200 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:background="@drawable/whitestom_toast">
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_gravity="center"
+                        android:hint="Date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="40dp"
+                        android:ellipsize="none"
+                        android:fontFamily="sans-serif-thin"
+                        android:includeFontPadding="false"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bluestom_toast">
+                        <!--Display the analog clock on the screen-->
+                        <AnalogClock
+                            android:id="@+id/analogClock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center" />
+                        <!--Display the text clock on the screen-->
+                        <TextClock
+                            android:id="@+id/textClock"
+                            android:format12Hour="hh:mm aa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="40dp"
+                            android:ellipsize="none"
+                            android:fontFamily="sans-serif"
+                            android:includeFontPadding="false"
+                            android:layout_gravity="center|right" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:background="@drawable/whitestom_toast">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/batch_on"
+                                android:textColor="@color/colorPrimary"
+                                android:typeface="sans"
+                                android:textSize="20sp"
+                                android:layout_marginLeft="10dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="S0102016081299"
+                                android:id="@+id/txtBatchNo"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="16dp"
+                                android:typeface="sans"
+                                android:layout_marginLeft="10dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/opened_on"
+                                android:id="@+id/textView11"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="20sp"
+                                android:typeface="sans"
+                                android:layout_marginLeft="10dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="12/08/2016"
+                                android:id="@+id/dtpBatchOn"
+                                android:textSize="16dp"
+                                android:textColor="@color/colorBlack"
+                                android:typeface="sans"
+                                android:layout_marginLeft="10dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <Button
+                            android:id="@+id/btnBatchOn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/open_batch"
+                            android:textColor="@drawable/button_text_color"
+                            android:background="@drawable/bg_buttons"
+                            android:layout_margin="10dp" />
+
+                        <Button
+                            android:id="@+id/btnBatchOff"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/close_batch"
+                            android:textColor="@drawable/buttonb_text_color"
+                            android:background="@drawable/bgb_buttons"
+                            android:layout_margin="10dp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Company Name ©2016"
+                    android:id="@+id/txtCompanyInfo"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15dp"
+                    android:typeface="serif"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

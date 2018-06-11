@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/spinnerSession"
+                    android:popupBackground="@color/colorWhite"
+                    android:spinnerMode="dialog"
+                    android:entries="@array/batchsession"
+                    android:prompt="@string/spinner_prompt_session"
+                    />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnCloseBatch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@drawable/bg_buttons"
+                android:text="Close"
+                android:textColor="@drawable/button_text_color"
+                android:textSize="15sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
